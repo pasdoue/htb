@@ -1,0 +1,18 @@
+
+
+1. Handle connection error when not connected to HTB VPN
+When not connected to VPN : 
+
+Traceback (most recent call last):
+  File "/home/arthur/.local/lib/python3.8/site-packages/urllib3/connection.py", line 158, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arthur/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+
+2. Handle final shell through nasted pipes
